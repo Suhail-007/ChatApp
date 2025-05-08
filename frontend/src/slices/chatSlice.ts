@@ -23,7 +23,9 @@ const initialState: ChatState = {
   error: null,
 };
 
-const BASE_URL = import.meta.env.BASE_URL || 'http://localhost:5000'; // Vite env
+const BASE_URL = 'https://chatapp-8v7f.onrender.com';
+
+console.log(import.meta.env.VITE_API_URL);
 
 export const fetchMessages = createAsyncThunk<Message[], string>(
   'chat/fetchMessages',
